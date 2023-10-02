@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>checkpoint2</title>
+</head>
+
+<body class="bgimage">
+
+    <header class="container-fluid">
+
+        <section class="row text-center">
+            <div class="col-12 mt-5 fs-1 title mb-5">
+                <p>PUMPKIN MINER</p>
+            </div>
+        </section>
+    </header>
+
+
+    <main class="container-fluid text-center">
+        <section class="row">
+            <div class="col-12 mb-5">
+                <img onclick="addPumpkin()" role="button"
+                    src="https://th.bing.com/th/id/OIP.skzY0RVzEv8ilBQiT1wKOAHaFj?w=196&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="Pumpkin button">
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <section class="row text-center justify-content-center">
+
+            <div class="col-2 bottombox fs-4">
+                <p id="click amount" class="p-4">
+
+                </p>
+            </div>
+
+            <div class="col-3 bottombox fs-1">
+                <p id="pumpkin amount" class="p-2">
+
+                </p>
+
+            </div>
+
+            <div class="col-2 bottombox fs-4">
+                <p id="auto amount" class="p-4">
+
+                </p>
+            </div>
+
+        </section>
+
+        <section class="row bottombox m-5">
+
+            <div class="col-12">
+
+                <section class="row justify-content-between text-center">
+
+                    <div class="col-5">
+                        <section class="row justify-content-between">
+                            <div class="col-5">
+                                <p class="fs-3">Click</p>
+
+                                <div class="mb-3">
+                                    <button onclick="buyClick()" class="btn buttonyel">50 pumpkins🎃</button>
+                                    <p>click + 1</p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <button onclick="buyCutter()" class="btn buttonyel">100 pumpkins🎃</button>
+                                    <p>cutter + 5</p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 brdr">
+                                <p class="fs-3">Auto</p>
+
+                                <div class="mb-3">
+                                    <button onclick="buyCarver2()" class="btn buttonred">1k pumpkins🎃</button>
+                                    <p>carver + 10 /3s</p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <button onclick="buyScooper2()" class="btn buttonred">5k pumpkins🎃</button>
+                                    <p>scooper + 100 /3s</p>
+                                </div>
+
+
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-5">
+                        <section class="row justify-content-between align-items-center">
+
+                            <div class="col-5 brdr2">
+                                <p class="fs-3">Click Stats</p>
+
+                                <div>
+                                    <p class="fs-3 pb-4"> 0 clicks</p>
+                                </div>
+
+                                <div>
+                                    <p class="fs-3">0 cutters</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5">
+                                <p class="fs-3">Auto Stats</p>
+
+                                <div>
+                                    <p class="fs-3 pb-4">0 carvers</p>
+                                </div>
+
+                                <div>
+                                    <p class="fs-3 pb-3">0 scoopers</p>
+                                </div>
+
+                            </div>
+
+                        </section>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

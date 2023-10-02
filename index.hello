@@ -1,0 +1,10 @@
+function buyCarver2() {
+    const carverName = automaticUpgrades.find(automaticUpgrades => automaticUpgrades.name == 'carver')
+    if (pumpkin >= carverName.price) {
+        carverName.quantity++
+        carverName.price *= 1.2;
+        console.log('carver', carverName);
+        pumpkin -= carverName.price
+    }
+    drawPumpkins()
+}
